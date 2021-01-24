@@ -4,13 +4,13 @@
     "version": "0.1.0",
     "manifest_version": 2,
     "icons": {
-        "16": "./security-16x16.png",
-        "32": "./security-32x32.png",
-        "64": "./security-64x64.png",
-        "128": "./security-128x128.png"
+        "16": "./assets/security-16x16.png",
+        "32": "./assets/security-32x32.png",
+        "64": "./assets/security-64x64.png",
+        "128": "./assets/security-128x128.png"
     },
     "background": {
-        "scripts": ["./background.js", "./recognition/onPlay.js"]
+        "scripts": ["./background.js"]
     },
     "options_page": "./options.html",
     "browser_action": {
