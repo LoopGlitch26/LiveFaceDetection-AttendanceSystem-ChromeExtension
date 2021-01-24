@@ -17,7 +17,7 @@ const uiConfig = {
         signInSuccessWithAuthResult: function(authResult, redirectUrl) {
             chrome.runtime.sendMessage({ message: 'sign_in' }, function(response) {
                 if (response.message == 'success') {
-                    window.location.replace('./welcome.html');
+                    window.location.replace('./main.html');
                 }
             });
             return false;
@@ -39,14 +39,8 @@ const uiConfig = {
                 prompt: 'select_account'
             }
         },
-        {
-            provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-            // customerParameters: {
-            // prompt: 'email',
-            // prompt: 'password'
-            // }
-        },
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+
+        // firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
         // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         // firebase.auth.GithubAuthProvider.PROVIDER_ID,

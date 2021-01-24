@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 130px;
+    display: flex;
+    /* background-image: 'background.jpg'; */
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #0c4749;
+    background-image: 'background.jpg';
+    background-position: center center;
+    margin: #077c5f;
+}
+
+#my_sign_in {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    width: 75%;
+    height: 75%;
+    border-radius: 5px;
+    color: #181616;
+    background-color: #097074;
+    transition-duration: 1s;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+/* #my_sign_in:hover {
+    background-color: rgb(2, 172, 149);
+    color: #283747;
+    transform: translate(0%, 0%) scale(1);
+    font-size: 3em;
+    font-weight: bold;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px white;
+    text-shadow: 2px 2px 5px black;
+} */
+
+#my_span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    text-align: right;
+    z-index: 50%;
+    pointer-events: none;
+}
+
+#logos {
+    padding-bottom: 8px;
+}
